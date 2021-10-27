@@ -5,13 +5,11 @@ import requests
 from lxml import etree
 import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from tqdm import tqdm
 
 def getPlayerInfo(url, path="/Users/turnerschwiebert/Desktop/chromedriver"):
     
-    s=Service(path)
-    driver = webdriver.Chrome(service=s)
+    driver = webdriver.Chrome(executable_path=path)
     driver.get(url)
     source_bytes = driver.page_source.encode()
     driver.quit()
