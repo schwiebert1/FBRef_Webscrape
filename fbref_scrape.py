@@ -61,8 +61,8 @@ def getPlayerRoot(info):
     return htmlroot
 
 def genAge(date, birth):
-    date_obj1 = date[1]*365
-    date_obj2 = date[0]*30
+    date_obj1 = date[0]*365
+    date_obj2 = date[1]*30
     date_obj3 = date[2]
     days_current = date_obj1 + date_obj2 + date_obj3
     
@@ -80,8 +80,8 @@ def genAge(date, birth):
         'November': 11,
         'December': 12
     }
-    birth_obj1 = int(birth[1])*365
-    birth_obj2 = months[birth[0]]*30
+    birth_obj1 = int(birth[0])*365
+    birth_obj2 = months[birth[1]]*30
     birth_obj3 = int(birth[2])
     days_at_birth = birth_obj1 + birth_obj2 + birth_obj3
     
