@@ -61,27 +61,27 @@ def getPlayerRoot(info):
     return htmlroot
 
 def genAge(date, birth):
-    date_obj1 = date[0]*365
-    date_obj2 = date[1]*30
-    date_obj3 = date[2]
+    date_obj1 = date[2]*365
+    date_obj2 = date[0]*30
+    date_obj3 = date[1]
     days_current = date_obj1 + date_obj2 + date_obj3
     
-    months = {
-        'January': 1,
-        'February': 2,
-        'March': 3,
-        'April': 4,
-        'May': 5,
-        'June': 6,
-        'July': 7,
-        'August': 8,
-        'September': 9,
-        'October': 10,
-        'November': 11,
-        'December': 12
-    }
+    # months = {
+    #     'January': 1,
+    #     'February': 2,
+    #     'March': 3,
+    #     'April': 4,
+    #     'May': 5,
+    #     'June': 6,
+    #     'July': 7,
+    #     'August': 8,
+    #     'September': 9,
+    #     'October': 10,
+    #     'November': 11,
+    #     'December': 12
+    # }
     birth_obj1 = int(birth[0])*365
-    birth_obj2 = months[birth[1]]*30
+    birth_obj2 = int(birth[1])*30
     birth_obj3 = int(birth[2])
     days_at_birth = birth_obj1 + birth_obj2 + birth_obj3
     
@@ -125,9 +125,10 @@ def PlayerRow(root, info, date):
         countrySTR = rootSTR.split("""National Team:</strong>""")[1].split(">")[1]
         row['country'] = countrySTR[:countrySTR.find("<")]
         
-        ageSTR = rootSTR.split("""itemprop="birthDate""")[1].split(">")[1]
-        raw_age = ageSTR[:ageSTR.find("<")]
-        birth = (raw_age.split(" ")[6][:4], raw_age.split(" ")[4], raw_age.split(" ")[5][:-1])
+        ageSTR = rootSTR.split("""itemprop="birthDate" id="necro-birth" data-birt""")[1].split("h=")[1][1:10]
+        birth_date = ageSTR.split["-"]
+        birth = (birth_date[0], birth_date[1], birth_date[2])
+        #year, month, day
         age = round(genAge(date, birth), 2)
         row['age'] = age
     except:
