@@ -2670,8 +2670,8 @@ Note: Stats calculated by summing player stats. This yields higher values than w
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='32' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='31' param='vert' w='98666' x='667' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='34' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='33' param='vert' w='98666' x='667' y='1000'>
                 <zone _.fcp.SetMembershipControl.false...type='highlighter' _.fcp.SetMembershipControl.true...type-v2='highlighter' h='6500' id='11' name='Sheet 1' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]' w='13833' x='85500' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
