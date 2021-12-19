@@ -4,11 +4,14 @@ I challenged myself to use webscraping techniques as much as possible.\n
 
 STATUS: not working :( 
 
-*fbref_srape.py:*\n
-***Overview:***\n
+*fbref_srape.py:*
+
+***Overview:***
+
 Scrapes player names from league's page. Uses that info to build valid URL's for each player. Collects per90 stats from each player's adavnced stats page. Compiles stats into data frames. Writes data frames to csv files.
 
-***Functions:***\n
+***Functions:***
+
   - getPlayerInfo: Returns list of player names, club, league, and FBRef player ID by scraping league page (using chrome web driver)
   - getPlayerRoot: Builds player-specific url and returns its parsed html response (root)
   - genAge: returns up-to-date age using birth day and runtime's date (invoked in PlayerRow)
