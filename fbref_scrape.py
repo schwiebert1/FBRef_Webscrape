@@ -1,4 +1,4 @@
-import os
+gimport os
 import json
 import io
 import requests
@@ -49,7 +49,7 @@ def getPlayerInfo(url, path="/Users/turnerschwiebert/Desktop/chromedriver"):
     return IDs
 
 def getPlayerRoot(info):
-    if info[0].find("%") != -1:
+    if info[0].find("%") != -1: 
         return "Error"
     url = f"https://fbref.com/en/players/{info[1]}/scout/365_euro/{info[0]}-Scouting-Report"
     
@@ -136,6 +136,7 @@ def PlayerRow(root, info, date):
     
     row['PD_Info'] = f"{name} - {age} - {club}"
     
+    #ASSIGN "POS"
     pos = posSTR[:posSTR.find("s")]
     attrib = ""
     if pos == "Goalkeeper":
@@ -150,7 +151,7 @@ def PlayerRow(root, info, date):
         attrib = "FW"
     if pos == "Att Mid / Wing":
         attrib = "AM"
-        
+    
     varibs = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/th/text()""")
     
     remove = [
@@ -197,7 +198,7 @@ def getDate():
     response = requests.get("https://www.calendardate.com/todays.htm")
     date = response.text.split("""<td id="tprg"> """)[5].split("-")
     date_tuple = (int(date[0]), int(date[1]), int(date[2][:4]))
-    return date_tuple
+    return date_tupleF
 
 def genTables(date,
     url_list = [
