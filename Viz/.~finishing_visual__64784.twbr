@@ -1,0 +1,2914 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0818.1952                               -->
+<workbook source-build='2020.4.8 (20204.21.0818.1952)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='players' inline='true' name='federated.0lyssy200wqy6q19w0c8k179mene' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='players' name='textscan.1iw20s50a5t4de1dp06gi0mrz9st'>
+            <connection class='textscan' directory='/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Data' filename='players.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1iw20s50a5t4de1dp06gi0mrz9st' name='players.csv' table='[players#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='player_id' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='club' ordinal='3' />
+            <column datatype='string' name='league' ordinal='4' />
+            <column datatype='integer' name='height_cm' ordinal='5' />
+            <column datatype='integer' name='weight_kg' ordinal='6' />
+            <column datatype='string' name='position' ordinal='7' />
+            <column datatype='string' name='foot' ordinal='8' />
+            <column datatype='string' name='country' ordinal='9' />
+            <column datatype='real' name='age' ordinal='10' />
+            <column datatype='string' name='PD_Info' ordinal='11' />
+            <column datatype='real' name='Goals' ordinal='12' />
+            <column datatype='real' name='Assists' ordinal='13' />
+            <column datatype='real' name='Non-Penalty Goals' ordinal='14' />
+            <column datatype='real' name='Penalty Kicks Made' ordinal='15' />
+            <column datatype='real' name='Penalty Kicks Attempted' ordinal='16' />
+            <column datatype='real' name='Yellow Cards' ordinal='17' />
+            <column datatype='real' name='Red Cards' ordinal='18' />
+            <column datatype='real' name='xG' ordinal='19' />
+            <column datatype='real' name='npxG' ordinal='20' />
+            <column datatype='real' name='xA' ordinal='21' />
+            <column datatype='real' name='npxG+xA' ordinal='22' />
+            <column datatype='real' name='Shots Total' ordinal='23' />
+            <column datatype='real' name='Shots on target' ordinal='24' />
+            <column datatype='real' name='Shots on target %' ordinal='25' />
+            <column datatype='real' name='Goals/Shot' ordinal='26' />
+            <column datatype='real' name='Goals/Shot on target' ordinal='27' />
+            <column datatype='real' name='Average Shot Distance' ordinal='28' />
+            <column datatype='real' name='Shots from free kicks' ordinal='29' />
+            <column datatype='real' name='npxG/Sh' ordinal='30' />
+            <column datatype='real' name='Goals - xG' ordinal='31' />
+            <column datatype='real' name='Non-Penalty Goals - npxG' ordinal='32' />
+            <column datatype='real' name='Passes Completed' ordinal='33' />
+            <column datatype='real' name='Passes Attempted' ordinal='34' />
+            <column datatype='real' name='Pass Completion %' ordinal='35' />
+            <column datatype='real' name='Total Passing Distance' ordinal='36' />
+            <column datatype='real' name='Progressive Passing Distance' ordinal='37' />
+            <column datatype='real' name='Passes Completed (Short)' ordinal='38' />
+            <column datatype='real' name='Passes Attempted (Short)' ordinal='39' />
+            <column datatype='real' name='Pass Completion % (Short)' ordinal='40' />
+            <column datatype='real' name='Passes Completed (Medium)' ordinal='41' />
+            <column datatype='real' name='Passes Attempted (Medium)' ordinal='42' />
+            <column datatype='real' name='Pass Completion % (Medium)' ordinal='43' />
+            <column datatype='real' name='Passes Completed (Long)' ordinal='44' />
+            <column datatype='real' name='Passes Attempted (Long)' ordinal='45' />
+            <column datatype='real' name='Pass Completion % (Long)' ordinal='46' />
+            <column datatype='real' name='Key Passes' ordinal='47' />
+            <column datatype='real' name='Passes into Final Third' ordinal='48' />
+            <column datatype='real' name='Passes into Penalty Area' ordinal='49' />
+            <column datatype='real' name='Crosses into Penalty Area' ordinal='50' />
+            <column datatype='real' name='Progressive Passes' ordinal='51' />
+            <column datatype='real' name='Live-ball passes' ordinal='52' />
+            <column datatype='real' name='Dead-ball passes' ordinal='53' />
+            <column datatype='real' name='Passes from Free Kicks' ordinal='54' />
+            <column datatype='real' name='Through Balls' ordinal='55' />
+            <column datatype='real' name='Passes Under Pressure' ordinal='56' />
+            <column datatype='real' name='Switches' ordinal='57' />
+            <column datatype='real' name='Crosses' ordinal='58' />
+            <column datatype='real' name='Corner Kicks' ordinal='59' />
+            <column datatype='real' name='Inswinging Corner Kicks' ordinal='60' />
+            <column datatype='real' name='Outswinging Corner Kicks' ordinal='61' />
+            <column datatype='real' name='Straight Corner Kicks' ordinal='62' />
+            <column datatype='real' name='Ground passes' ordinal='63' />
+            <column datatype='real' name='Low Passes' ordinal='64' />
+            <column datatype='real' name='High Passes' ordinal='65' />
+            <column datatype='real' name='Passes Attempted (Left)' ordinal='66' />
+            <column datatype='real' name='Passes Attempted (Right)' ordinal='67' />
+            <column datatype='real' name='Passes Attempted (Head)' ordinal='68' />
+            <column datatype='real' name='Throw-Ins taken' ordinal='69' />
+            <column datatype='real' name='Passes Attempted (Other)' ordinal='70' />
+            <column datatype='real' name='Passes Offside' ordinal='71' />
+            <column datatype='real' name='Passes Out of Bounds' ordinal='72' />
+            <column datatype='real' name='Passes Intercepted' ordinal='73' />
+            <column datatype='real' name='Passes Blocked' ordinal='74' />
+            <column datatype='real' name='Shot-Creating Actions' ordinal='75' />
+            <column datatype='real' name='SCA (PassLive)' ordinal='76' />
+            <column datatype='real' name='SCA (PassDead)' ordinal='77' />
+            <column datatype='real' name='SCA (Drib)' ordinal='78' />
+            <column datatype='real' name='SCA (Sh)' ordinal='79' />
+            <column datatype='real' name='SCA (Fld)' ordinal='80' />
+            <column datatype='real' name='SCA (Def)' ordinal='81' />
+            <column datatype='real' name='Goal-Creating Actions' ordinal='82' />
+            <column datatype='real' name='GCA (PassLive)' ordinal='83' />
+            <column datatype='real' name='GCA (PassDead)' ordinal='84' />
+            <column datatype='real' name='GCA (Drib)' ordinal='85' />
+            <column datatype='real' name='GCA (Sh)' ordinal='86' />
+            <column datatype='real' name='GCA (Fld)' ordinal='87' />
+            <column datatype='real' name='GCA (Def)' ordinal='88' />
+            <column datatype='real' name='Tackles' ordinal='89' />
+            <column datatype='real' name='Tackles Won' ordinal='90' />
+            <column datatype='real' name='Tackles (Def 3rd)' ordinal='91' />
+            <column datatype='real' name='Tackles (Mid 3rd)' ordinal='92' />
+            <column datatype='real' name='Tackles (Att 3rd)' ordinal='93' />
+            <column datatype='real' name='Dribblers Tackled' ordinal='94' />
+            <column datatype='real' name='Dribbles Contested' ordinal='95' />
+            <column datatype='real' name='% of dribblers tackled' ordinal='96' />
+            <column datatype='real' name='Dribbled Past' ordinal='97' />
+            <column datatype='real' name='Pressures' ordinal='98' />
+            <column datatype='real' name='Successful Pressures' ordinal='99' />
+            <column datatype='real' name='Successful Pressure %' ordinal='100' />
+            <column datatype='real' name='Pressures (Def 3rd)' ordinal='101' />
+            <column datatype='real' name='Pressures (Mid 3rd)' ordinal='102' />
+            <column datatype='real' name='Pressures (Att 3rd)' ordinal='103' />
+            <column datatype='real' name='Blocks' ordinal='104' />
+            <column datatype='real' name='Shots Blocked' ordinal='105' />
+            <column datatype='real' name='Shots Saved' ordinal='106' />
+            <column datatype='real' name='Interceptions' ordinal='107' />
+            <column datatype='real' name='Tkl+Int' ordinal='108' />
+            <column datatype='real' name='Clearances' ordinal='109' />
+            <column datatype='real' name='Errors' ordinal='110' />
+            <column datatype='real' name='Touches' ordinal='111' />
+            <column datatype='real' name='Touches (Def Pen)' ordinal='112' />
+            <column datatype='real' name='Touches (Def 3rd)' ordinal='113' />
+            <column datatype='real' name='Touches (Mid 3rd)' ordinal='114' />
+            <column datatype='real' name='Touches (Att 3rd)' ordinal='115' />
+            <column datatype='real' name='Touches (Att Pen)' ordinal='116' />
+            <column datatype='real' name='Touches (Live-Ball)' ordinal='117' />
+            <column datatype='real' name='Dribbles Completed' ordinal='118' />
+            <column datatype='real' name='Dribbles Attempted' ordinal='119' />
+            <column datatype='real' name='Successful Dribble %' ordinal='120' />
+            <column datatype='real' name='Players Dribbled Past' ordinal='121' />
+            <column datatype='real' name='Nutmegs' ordinal='122' />
+            <column datatype='real' name='Carries' ordinal='123' />
+            <column datatype='real' name='Total Carrying Distance' ordinal='124' />
+            <column datatype='real' name='Progressive Carrying Distance' ordinal='125' />
+            <column datatype='real' name='Progressive Carries' ordinal='126' />
+            <column datatype='real' name='Carries into Final Third' ordinal='127' />
+            <column datatype='real' name='Carries into Penalty Area' ordinal='128' />
+            <column datatype='real' name='Miscontrols' ordinal='129' />
+            <column datatype='real' name='Dispossessed' ordinal='130' />
+            <column datatype='real' name='Pass Targets' ordinal='131' />
+            <column datatype='real' name='Passes Received' ordinal='132' />
+            <column datatype='real' name='Passes Received %' ordinal='133' />
+            <column datatype='real' name='Progressive Passes Rec' ordinal='134' />
+            <column datatype='real' name='Second Yellow Card' ordinal='135' />
+            <column datatype='real' name='Fouls Committed' ordinal='136' />
+            <column datatype='real' name='Fouls Drawn' ordinal='137' />
+            <column datatype='real' name='Offsides' ordinal='138' />
+            <column datatype='real' name='Penalty Kicks Won' ordinal='139' />
+            <column datatype='real' name='Penalty Kicks Conceded' ordinal='140' />
+            <column datatype='real' name='Own Goals' ordinal='141' />
+            <column datatype='real' name='Ball Recoveries' ordinal='142' />
+            <column datatype='real' name='Aerials won' ordinal='143' />
+            <column datatype='real' name='Aerials lost' ordinal='144' />
+            <column datatype='real' name='% of Aerials Won' ordinal='145' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1iw20s50a5t4de1dp06gi0mrz9st' name='players.csv' table='[players#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='player_id' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='club' ordinal='3' />
+            <column datatype='string' name='league' ordinal='4' />
+            <column datatype='integer' name='height_cm' ordinal='5' />
+            <column datatype='integer' name='weight_kg' ordinal='6' />
+            <column datatype='string' name='position' ordinal='7' />
+            <column datatype='string' name='foot' ordinal='8' />
+            <column datatype='string' name='country' ordinal='9' />
+            <column datatype='real' name='age' ordinal='10' />
+            <column datatype='string' name='PD_Info' ordinal='11' />
+            <column datatype='real' name='Goals' ordinal='12' />
+            <column datatype='real' name='Assists' ordinal='13' />
+            <column datatype='real' name='Non-Penalty Goals' ordinal='14' />
+            <column datatype='real' name='Penalty Kicks Made' ordinal='15' />
+            <column datatype='real' name='Penalty Kicks Attempted' ordinal='16' />
+            <column datatype='real' name='Yellow Cards' ordinal='17' />
+            <column datatype='real' name='Red Cards' ordinal='18' />
+            <column datatype='real' name='xG' ordinal='19' />
+            <column datatype='real' name='npxG' ordinal='20' />
+            <column datatype='real' name='xA' ordinal='21' />
+            <column datatype='real' name='npxG+xA' ordinal='22' />
+            <column datatype='real' name='Shots Total' ordinal='23' />
+            <column datatype='real' name='Shots on target' ordinal='24' />
+            <column datatype='real' name='Shots on target %' ordinal='25' />
+            <column datatype='real' name='Goals/Shot' ordinal='26' />
+            <column datatype='real' name='Goals/Shot on target' ordinal='27' />
+            <column datatype='real' name='Average Shot Distance' ordinal='28' />
+            <column datatype='real' name='Shots from free kicks' ordinal='29' />
+            <column datatype='real' name='npxG/Sh' ordinal='30' />
+            <column datatype='real' name='Goals - xG' ordinal='31' />
+            <column datatype='real' name='Non-Penalty Goals - npxG' ordinal='32' />
+            <column datatype='real' name='Passes Completed' ordinal='33' />
+            <column datatype='real' name='Passes Attempted' ordinal='34' />
+            <column datatype='real' name='Pass Completion %' ordinal='35' />
+            <column datatype='real' name='Total Passing Distance' ordinal='36' />
+            <column datatype='real' name='Progressive Passing Distance' ordinal='37' />
+            <column datatype='real' name='Passes Completed (Short)' ordinal='38' />
+            <column datatype='real' name='Passes Attempted (Short)' ordinal='39' />
+            <column datatype='real' name='Pass Completion % (Short)' ordinal='40' />
+            <column datatype='real' name='Passes Completed (Medium)' ordinal='41' />
+            <column datatype='real' name='Passes Attempted (Medium)' ordinal='42' />
+            <column datatype='real' name='Pass Completion % (Medium)' ordinal='43' />
+            <column datatype='real' name='Passes Completed (Long)' ordinal='44' />
+            <column datatype='real' name='Passes Attempted (Long)' ordinal='45' />
+            <column datatype='real' name='Pass Completion % (Long)' ordinal='46' />
+            <column datatype='real' name='Key Passes' ordinal='47' />
+            <column datatype='real' name='Passes into Final Third' ordinal='48' />
+            <column datatype='real' name='Passes into Penalty Area' ordinal='49' />
+            <column datatype='real' name='Crosses into Penalty Area' ordinal='50' />
+            <column datatype='real' name='Progressive Passes' ordinal='51' />
+            <column datatype='real' name='Live-ball passes' ordinal='52' />
+            <column datatype='real' name='Dead-ball passes' ordinal='53' />
+            <column datatype='real' name='Passes from Free Kicks' ordinal='54' />
+            <column datatype='real' name='Through Balls' ordinal='55' />
+            <column datatype='real' name='Passes Under Pressure' ordinal='56' />
+            <column datatype='real' name='Switches' ordinal='57' />
+            <column datatype='real' name='Crosses' ordinal='58' />
+            <column datatype='real' name='Corner Kicks' ordinal='59' />
+            <column datatype='real' name='Inswinging Corner Kicks' ordinal='60' />
+            <column datatype='real' name='Outswinging Corner Kicks' ordinal='61' />
+            <column datatype='real' name='Straight Corner Kicks' ordinal='62' />
+            <column datatype='real' name='Ground passes' ordinal='63' />
+            <column datatype='real' name='Low Passes' ordinal='64' />
+            <column datatype='real' name='High Passes' ordinal='65' />
+            <column datatype='real' name='Passes Attempted (Left)' ordinal='66' />
+            <column datatype='real' name='Passes Attempted (Right)' ordinal='67' />
+            <column datatype='real' name='Passes Attempted (Head)' ordinal='68' />
+            <column datatype='real' name='Throw-Ins taken' ordinal='69' />
+            <column datatype='real' name='Passes Attempted (Other)' ordinal='70' />
+            <column datatype='real' name='Passes Offside' ordinal='71' />
+            <column datatype='real' name='Passes Out of Bounds' ordinal='72' />
+            <column datatype='real' name='Passes Intercepted' ordinal='73' />
+            <column datatype='real' name='Passes Blocked' ordinal='74' />
+            <column datatype='real' name='Shot-Creating Actions' ordinal='75' />
+            <column datatype='real' name='SCA (PassLive)' ordinal='76' />
+            <column datatype='real' name='SCA (PassDead)' ordinal='77' />
+            <column datatype='real' name='SCA (Drib)' ordinal='78' />
+            <column datatype='real' name='SCA (Sh)' ordinal='79' />
+            <column datatype='real' name='SCA (Fld)' ordinal='80' />
+            <column datatype='real' name='SCA (Def)' ordinal='81' />
+            <column datatype='real' name='Goal-Creating Actions' ordinal='82' />
+            <column datatype='real' name='GCA (PassLive)' ordinal='83' />
+            <column datatype='real' name='GCA (PassDead)' ordinal='84' />
+            <column datatype='real' name='GCA (Drib)' ordinal='85' />
+            <column datatype='real' name='GCA (Sh)' ordinal='86' />
+            <column datatype='real' name='GCA (Fld)' ordinal='87' />
+            <column datatype='real' name='GCA (Def)' ordinal='88' />
+            <column datatype='real' name='Tackles' ordinal='89' />
+            <column datatype='real' name='Tackles Won' ordinal='90' />
+            <column datatype='real' name='Tackles (Def 3rd)' ordinal='91' />
+            <column datatype='real' name='Tackles (Mid 3rd)' ordinal='92' />
+            <column datatype='real' name='Tackles (Att 3rd)' ordinal='93' />
+            <column datatype='real' name='Dribblers Tackled' ordinal='94' />
+            <column datatype='real' name='Dribbles Contested' ordinal='95' />
+            <column datatype='real' name='% of dribblers tackled' ordinal='96' />
+            <column datatype='real' name='Dribbled Past' ordinal='97' />
+            <column datatype='real' name='Pressures' ordinal='98' />
+            <column datatype='real' name='Successful Pressures' ordinal='99' />
+            <column datatype='real' name='Successful Pressure %' ordinal='100' />
+            <column datatype='real' name='Pressures (Def 3rd)' ordinal='101' />
+            <column datatype='real' name='Pressures (Mid 3rd)' ordinal='102' />
+            <column datatype='real' name='Pressures (Att 3rd)' ordinal='103' />
+            <column datatype='real' name='Blocks' ordinal='104' />
+            <column datatype='real' name='Shots Blocked' ordinal='105' />
+            <column datatype='real' name='Shots Saved' ordinal='106' />
+            <column datatype='real' name='Interceptions' ordinal='107' />
+            <column datatype='real' name='Tkl+Int' ordinal='108' />
+            <column datatype='real' name='Clearances' ordinal='109' />
+            <column datatype='real' name='Errors' ordinal='110' />
+            <column datatype='real' name='Touches' ordinal='111' />
+            <column datatype='real' name='Touches (Def Pen)' ordinal='112' />
+            <column datatype='real' name='Touches (Def 3rd)' ordinal='113' />
+            <column datatype='real' name='Touches (Mid 3rd)' ordinal='114' />
+            <column datatype='real' name='Touches (Att 3rd)' ordinal='115' />
+            <column datatype='real' name='Touches (Att Pen)' ordinal='116' />
+            <column datatype='real' name='Touches (Live-Ball)' ordinal='117' />
+            <column datatype='real' name='Dribbles Completed' ordinal='118' />
+            <column datatype='real' name='Dribbles Attempted' ordinal='119' />
+            <column datatype='real' name='Successful Dribble %' ordinal='120' />
+            <column datatype='real' name='Players Dribbled Past' ordinal='121' />
+            <column datatype='real' name='Nutmegs' ordinal='122' />
+            <column datatype='real' name='Carries' ordinal='123' />
+            <column datatype='real' name='Total Carrying Distance' ordinal='124' />
+            <column datatype='real' name='Progressive Carrying Distance' ordinal='125' />
+            <column datatype='real' name='Progressive Carries' ordinal='126' />
+            <column datatype='real' name='Carries into Final Third' ordinal='127' />
+            <column datatype='real' name='Carries into Penalty Area' ordinal='128' />
+            <column datatype='real' name='Miscontrols' ordinal='129' />
+            <column datatype='real' name='Dispossessed' ordinal='130' />
+            <column datatype='real' name='Pass Targets' ordinal='131' />
+            <column datatype='real' name='Passes Received' ordinal='132' />
+            <column datatype='real' name='Passes Received %' ordinal='133' />
+            <column datatype='real' name='Progressive Passes Rec' ordinal='134' />
+            <column datatype='real' name='Second Yellow Card' ordinal='135' />
+            <column datatype='real' name='Fouls Committed' ordinal='136' />
+            <column datatype='real' name='Fouls Drawn' ordinal='137' />
+            <column datatype='real' name='Offsides' ordinal='138' />
+            <column datatype='real' name='Penalty Kicks Won' ordinal='139' />
+            <column datatype='real' name='Penalty Kicks Conceded' ordinal='140' />
+            <column datatype='real' name='Own Goals' ordinal='141' />
+            <column datatype='real' name='Ball Recoveries' ordinal='142' />
+            <column datatype='real' name='Aerials won' ordinal='143' />
+            <column datatype='real' name='Aerials lost' ordinal='144' />
+            <column datatype='real' name='% of Aerials Won' ordinal='145' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>club</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[club]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>club</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>league</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[league]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>league</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height_cm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[height_cm]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>height_cm</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight_kg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weight_kg]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>weight_kg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>foot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[foot]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>foot</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PD_Info</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PD_Info]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>PD_Info</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Goals]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Goals</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assists</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Assists]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Assists</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non-Penalty Goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Non-Penalty Goals]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Non-Penalty Goals</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penalty Kicks Made</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Penalty Kicks Made]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Penalty Kicks Made</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penalty Kicks Attempted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Penalty Kicks Attempted]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Penalty Kicks Attempted</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yellow Cards</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Yellow Cards]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Yellow Cards</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Red Cards</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Red Cards]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Red Cards</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xG]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>xG</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>npxG</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xA]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>xA</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG+xA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG+xA]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>npxG+xA</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shots Total]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shots Total</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots on target</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shots on target]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shots on target</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots on target %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shots on target %]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shots on target %</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goals/Shot</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Goals/Shot]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Goals/Shot</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goals/Shot on target</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Goals/Shot on target]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Goals/Shot on target</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Shot Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Shot Distance]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Average Shot Distance</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots from free kicks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shots from free kicks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shots from free kicks</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG/Sh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG/Sh]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>npxG/Sh</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goals - xG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Goals - xG]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Goals - xG</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non-Penalty Goals - npxG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Non-Penalty Goals - npxG]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Non-Penalty Goals - npxG</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Completed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Completed]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Completed</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Completion %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass Completion %]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pass Completion %</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Passing Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Passing Distance]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Total Passing Distance</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Progressive Passing Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Progressive Passing Distance]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Progressive Passing Distance</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Completed (Short)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Completed (Short)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Completed (Short)</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Short)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Short)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Short)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Completion % (Short)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass Completion % (Short)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pass Completion % (Short)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Completed (Medium)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Completed (Medium)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Completed (Medium)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Medium)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Medium)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Medium)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Completion % (Medium)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass Completion % (Medium)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pass Completion % (Medium)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Completed (Long)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Completed (Long)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Completed (Long)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Long)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Long)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Long)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Completion % (Long)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass Completion % (Long)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pass Completion % (Long)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Key Passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Key Passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Key Passes</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes into Final Third</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes into Final Third]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes into Final Third</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes into Penalty Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes into Penalty Area]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes into Penalty Area</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crosses into Penalty Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crosses into Penalty Area]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Crosses into Penalty Area</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Progressive Passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Progressive Passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Progressive Passes</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Live-ball passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Live-ball passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Live-ball passes</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dead-ball passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dead-ball passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dead-ball passes</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes from Free Kicks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes from Free Kicks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes from Free Kicks</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Through Balls</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Through Balls]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Through Balls</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Under Pressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Under Pressure]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Under Pressure</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Switches</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Switches]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Switches</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crosses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crosses]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Crosses</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corner Kicks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Corner Kicks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Corner Kicks</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inswinging Corner Kicks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inswinging Corner Kicks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Inswinging Corner Kicks</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outswinging Corner Kicks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Outswinging Corner Kicks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Outswinging Corner Kicks</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Straight Corner Kicks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Straight Corner Kicks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Straight Corner Kicks</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ground passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ground passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Ground passes</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low Passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low Passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Low Passes</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High Passes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High Passes]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>High Passes</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Left)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Left)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Left)</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Right)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Right)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Right)</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Head)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Head)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Head)</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Throw-Ins taken</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Throw-Ins taken]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Throw-Ins taken</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Attempted (Other)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Attempted (Other)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Attempted (Other)</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Offside</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Offside]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Offside</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Out of Bounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Out of Bounds]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Out of Bounds</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Intercepted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Intercepted]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Intercepted</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Blocked</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Blocked]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Blocked</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shot-Creating Actions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shot-Creating Actions]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shot-Creating Actions</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA (PassLive)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCA (PassLive)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>SCA (PassLive)</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA (PassDead)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCA (PassDead)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>SCA (PassDead)</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA (Drib)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCA (Drib)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>SCA (Drib)</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA (Sh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCA (Sh)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>SCA (Sh)</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA (Fld)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCA (Fld)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>SCA (Fld)</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA (Def)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCA (Def)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>SCA (Def)</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goal-Creating Actions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Goal-Creating Actions]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Goal-Creating Actions</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GCA (PassLive)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GCA (PassLive)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>GCA (PassLive)</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GCA (PassDead)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GCA (PassDead)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>GCA (PassDead)</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GCA (Drib)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GCA (Drib)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>GCA (Drib)</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GCA (Sh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GCA (Sh)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>GCA (Sh)</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GCA (Fld)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GCA (Fld)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>GCA (Fld)</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GCA (Def)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GCA (Def)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>GCA (Def)</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tackles]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Tackles</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackles Won</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tackles Won]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Tackles Won</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackles (Def 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tackles (Def 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Tackles (Def 3rd)</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackles (Mid 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tackles (Mid 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Tackles (Mid 3rd)</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackles (Att 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tackles (Att 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Tackles (Att 3rd)</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dribblers Tackled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dribblers Tackled]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dribblers Tackled</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dribbles Contested</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dribbles Contested]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dribbles Contested</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% of dribblers tackled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% of dribblers tackled]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>% of dribblers tackled</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dribbled Past</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dribbled Past]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dribbled Past</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressures</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressures]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pressures</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Successful Pressures</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Successful Pressures]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Successful Pressures</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Successful Pressure %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Successful Pressure %]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Successful Pressure %</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressures (Def 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressures (Def 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pressures (Def 3rd)</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressures (Mid 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressures (Mid 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pressures (Mid 3rd)</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressures (Att 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressures (Att 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pressures (Att 3rd)</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Blocks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Blocks]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Blocks</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots Blocked</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shots Blocked]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shots Blocked</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots Saved</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shots Saved]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Shots Saved</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interceptions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Interceptions]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Interceptions</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tkl+Int</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tkl+Int]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Tkl+Int</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clearances</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Clearances]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Clearances</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Errors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Errors]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Errors</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches (Def Pen)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches (Def Pen)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches (Def Pen)</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches (Def 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches (Def 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches (Def 3rd)</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches (Mid 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches (Mid 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches (Mid 3rd)</remote-alias>
+            <ordinal>114</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches (Att 3rd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches (Att 3rd)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches (Att 3rd)</remote-alias>
+            <ordinal>115</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches (Att Pen)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches (Att Pen)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches (Att Pen)</remote-alias>
+            <ordinal>116</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touches (Live-Ball)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Touches (Live-Ball)]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Touches (Live-Ball)</remote-alias>
+            <ordinal>117</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dribbles Completed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dribbles Completed]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dribbles Completed</remote-alias>
+            <ordinal>118</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dribbles Attempted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dribbles Attempted]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dribbles Attempted</remote-alias>
+            <ordinal>119</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Successful Dribble %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Successful Dribble %]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Successful Dribble %</remote-alias>
+            <ordinal>120</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Players Dribbled Past</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Players Dribbled Past]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Players Dribbled Past</remote-alias>
+            <ordinal>121</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nutmegs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nutmegs]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Nutmegs</remote-alias>
+            <ordinal>122</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Carries]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Carries</remote-alias>
+            <ordinal>123</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Carrying Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Carrying Distance]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Total Carrying Distance</remote-alias>
+            <ordinal>124</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Progressive Carrying Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Progressive Carrying Distance]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Progressive Carrying Distance</remote-alias>
+            <ordinal>125</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Progressive Carries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Progressive Carries]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Progressive Carries</remote-alias>
+            <ordinal>126</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carries into Final Third</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Carries into Final Third]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Carries into Final Third</remote-alias>
+            <ordinal>127</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carries into Penalty Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Carries into Penalty Area]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Carries into Penalty Area</remote-alias>
+            <ordinal>128</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miscontrols</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Miscontrols]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Miscontrols</remote-alias>
+            <ordinal>129</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dispossessed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dispossessed]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Dispossessed</remote-alias>
+            <ordinal>130</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Targets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass Targets]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Pass Targets</remote-alias>
+            <ordinal>131</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Received</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Received]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Received</remote-alias>
+            <ordinal>132</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Received %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Passes Received %]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Passes Received %</remote-alias>
+            <ordinal>133</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Progressive Passes Rec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Progressive Passes Rec]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Progressive Passes Rec</remote-alias>
+            <ordinal>134</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second Yellow Card</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Second Yellow Card]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Second Yellow Card</remote-alias>
+            <ordinal>135</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fouls Committed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fouls Committed]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Fouls Committed</remote-alias>
+            <ordinal>136</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fouls Drawn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fouls Drawn]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Fouls Drawn</remote-alias>
+            <ordinal>137</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offsides</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Offsides]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Offsides</remote-alias>
+            <ordinal>138</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penalty Kicks Won</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Penalty Kicks Won]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Penalty Kicks Won</remote-alias>
+            <ordinal>139</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penalty Kicks Conceded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Penalty Kicks Conceded]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Penalty Kicks Conceded</remote-alias>
+            <ordinal>140</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Own Goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Own Goals]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Own Goals</remote-alias>
+            <ordinal>141</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ball Recoveries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ball Recoveries]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Ball Recoveries</remote-alias>
+            <ordinal>142</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aerials won</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aerials won]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Aerials won</remote-alias>
+            <ordinal>143</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aerials lost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aerials lost]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>Aerials lost</remote-alias>
+            <ordinal>144</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% of Aerials Won</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% of Aerials Won]</local-name>
+            <parent-name>[players.csv]</parent-name>
+            <remote-alias>% of Aerials Won</remote-alias>
+            <ordinal>145</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players.csv_D103982E7FCB42D6AE53100AB873D835]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Of Dribblers Tackled' datatype='real' name='[% of dribblers tackled]' role='measure' type='quantitative' />
+      <column caption='Goal-Creating Actions1' datatype='real' name='[Goal-Creating Actions]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Key Passes]' role='dimension' type='ordinal' />
+      <column caption='PD Info' datatype='string' name='[PD_Info]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='players.csv' datatype='table' name='[__tableau_internal_object_id__].[players.csv_D103982E7FCB42D6AE53100AB873D835]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Club' datatype='string' name='[club]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Foot' datatype='string' name='[foot]' role='dimension' type='nominal' />
+      <column caption='Height Cm' datatype='integer' name='[height_cm]' role='measure' type='quantitative' />
+      <column caption='League' datatype='string' name='[league]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Npx G' datatype='real' name='[npxG]' role='measure' type='quantitative' />
+      <column caption='Player Id' datatype='string' name='[player_id]' role='dimension' type='nominal' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Weight Kg' datatype='integer' name='[weight_kg]' role='measure' type='quantitative' />
+      <column caption='X A' datatype='real' name='[xA]' role='measure' type='quantitative' />
+      <column caption='X G' datatype='real' name='[xG]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='3000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='players.csv' id='players.csv_D103982E7FCB42D6AE53100AB873D835'>
+            <properties context=''>
+              <relation connection='textscan.1iw20s50a5t4de1dp06gi0mrz9st' name='players.csv' table='[players#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='player_id' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='string' name='club' ordinal='3' />
+                  <column datatype='string' name='league' ordinal='4' />
+                  <column datatype='integer' name='height_cm' ordinal='5' />
+                  <column datatype='integer' name='weight_kg' ordinal='6' />
+                  <column datatype='string' name='position' ordinal='7' />
+                  <column datatype='string' name='foot' ordinal='8' />
+                  <column datatype='string' name='country' ordinal='9' />
+                  <column datatype='real' name='age' ordinal='10' />
+                  <column datatype='string' name='PD_Info' ordinal='11' />
+                  <column datatype='real' name='Goals' ordinal='12' />
+                  <column datatype='real' name='Assists' ordinal='13' />
+                  <column datatype='real' name='Non-Penalty Goals' ordinal='14' />
+                  <column datatype='real' name='Penalty Kicks Made' ordinal='15' />
+                  <column datatype='real' name='Penalty Kicks Attempted' ordinal='16' />
+                  <column datatype='real' name='Yellow Cards' ordinal='17' />
+                  <column datatype='real' name='Red Cards' ordinal='18' />
+                  <column datatype='real' name='xG' ordinal='19' />
+                  <column datatype='real' name='npxG' ordinal='20' />
+                  <column datatype='real' name='xA' ordinal='21' />
+                  <column datatype='real' name='npxG+xA' ordinal='22' />
+                  <column datatype='real' name='Shots Total' ordinal='23' />
+                  <column datatype='real' name='Shots on target' ordinal='24' />
+                  <column datatype='real' name='Shots on target %' ordinal='25' />
+                  <column datatype='real' name='Goals/Shot' ordinal='26' />
+                  <column datatype='real' name='Goals/Shot on target' ordinal='27' />
+                  <column datatype='real' name='Average Shot Distance' ordinal='28' />
+                  <column datatype='real' name='Shots from free kicks' ordinal='29' />
+                  <column datatype='real' name='npxG/Sh' ordinal='30' />
+                  <column datatype='real' name='Goals - xG' ordinal='31' />
+                  <column datatype='real' name='Non-Penalty Goals - npxG' ordinal='32' />
+                  <column datatype='real' name='Passes Completed' ordinal='33' />
+                  <column datatype='real' name='Passes Attempted' ordinal='34' />
+                  <column datatype='real' name='Pass Completion %' ordinal='35' />
+                  <column datatype='real' name='Total Passing Distance' ordinal='36' />
+                  <column datatype='real' name='Progressive Passing Distance' ordinal='37' />
+                  <column datatype='real' name='Passes Completed (Short)' ordinal='38' />
+                  <column datatype='real' name='Passes Attempted (Short)' ordinal='39' />
+                  <column datatype='real' name='Pass Completion % (Short)' ordinal='40' />
+                  <column datatype='real' name='Passes Completed (Medium)' ordinal='41' />
+                  <column datatype='real' name='Passes Attempted (Medium)' ordinal='42' />
+                  <column datatype='real' name='Pass Completion % (Medium)' ordinal='43' />
+                  <column datatype='real' name='Passes Completed (Long)' ordinal='44' />
+                  <column datatype='real' name='Passes Attempted (Long)' ordinal='45' />
+                  <column datatype='real' name='Pass Completion % (Long)' ordinal='46' />
+                  <column datatype='real' name='Key Passes' ordinal='47' />
+                  <column datatype='real' name='Passes into Final Third' ordinal='48' />
+                  <column datatype='real' name='Passes into Penalty Area' ordinal='49' />
+                  <column datatype='real' name='Crosses into Penalty Area' ordinal='50' />
+                  <column datatype='real' name='Progressive Passes' ordinal='51' />
+                  <column datatype='real' name='Live-ball passes' ordinal='52' />
+                  <column datatype='real' name='Dead-ball passes' ordinal='53' />
+                  <column datatype='real' name='Passes from Free Kicks' ordinal='54' />
+                  <column datatype='real' name='Through Balls' ordinal='55' />
+                  <column datatype='real' name='Passes Under Pressure' ordinal='56' />
+                  <column datatype='real' name='Switches' ordinal='57' />
+                  <column datatype='real' name='Crosses' ordinal='58' />
+                  <column datatype='real' name='Corner Kicks' ordinal='59' />
+                  <column datatype='real' name='Inswinging Corner Kicks' ordinal='60' />
+                  <column datatype='real' name='Outswinging Corner Kicks' ordinal='61' />
+                  <column datatype='real' name='Straight Corner Kicks' ordinal='62' />
+                  <column datatype='real' name='Ground passes' ordinal='63' />
+                  <column datatype='real' name='Low Passes' ordinal='64' />
+                  <column datatype='real' name='High Passes' ordinal='65' />
+                  <column datatype='real' name='Passes Attempted (Left)' ordinal='66' />
+                  <column datatype='real' name='Passes Attempted (Right)' ordinal='67' />
+                  <column datatype='real' name='Passes Attempted (Head)' ordinal='68' />
+                  <column datatype='real' name='Throw-Ins taken' ordinal='69' />
+                  <column datatype='real' name='Passes Attempted (Other)' ordinal='70' />
+                  <column datatype='real' name='Passes Offside' ordinal='71' />
+                  <column datatype='real' name='Passes Out of Bounds' ordinal='72' />
+                  <column datatype='real' name='Passes Intercepted' ordinal='73' />
+                  <column datatype='real' name='Passes Blocked' ordinal='74' />
+                  <column datatype='real' name='Shot-Creating Actions' ordinal='75' />
+                  <column datatype='real' name='SCA (PassLive)' ordinal='76' />
+                  <column datatype='real' name='SCA (PassDead)' ordinal='77' />
+                  <column datatype='real' name='SCA (Drib)' ordinal='78' />
+                  <column datatype='real' name='SCA (Sh)' ordinal='79' />
+                  <column datatype='real' name='SCA (Fld)' ordinal='80' />
+                  <column datatype='real' name='SCA (Def)' ordinal='81' />
+                  <column datatype='real' name='Goal-Creating Actions' ordinal='82' />
+                  <column datatype='real' name='GCA (PassLive)' ordinal='83' />
+                  <column datatype='real' name='GCA (PassDead)' ordinal='84' />
+                  <column datatype='real' name='GCA (Drib)' ordinal='85' />
+                  <column datatype='real' name='GCA (Sh)' ordinal='86' />
+                  <column datatype='real' name='GCA (Fld)' ordinal='87' />
+                  <column datatype='real' name='GCA (Def)' ordinal='88' />
+                  <column datatype='real' name='Tackles' ordinal='89' />
+                  <column datatype='real' name='Tackles Won' ordinal='90' />
+                  <column datatype='real' name='Tackles (Def 3rd)' ordinal='91' />
+                  <column datatype='real' name='Tackles (Mid 3rd)' ordinal='92' />
+                  <column datatype='real' name='Tackles (Att 3rd)' ordinal='93' />
+                  <column datatype='real' name='Dribblers Tackled' ordinal='94' />
+                  <column datatype='real' name='Dribbles Contested' ordinal='95' />
+                  <column datatype='real' name='% of dribblers tackled' ordinal='96' />
+                  <column datatype='real' name='Dribbled Past' ordinal='97' />
+                  <column datatype='real' name='Pressures' ordinal='98' />
+                  <column datatype='real' name='Successful Pressures' ordinal='99' />
+                  <column datatype='real' name='Successful Pressure %' ordinal='100' />
+                  <column datatype='real' name='Pressures (Def 3rd)' ordinal='101' />
+                  <column datatype='real' name='Pressures (Mid 3rd)' ordinal='102' />
+                  <column datatype='real' name='Pressures (Att 3rd)' ordinal='103' />
+                  <column datatype='real' name='Blocks' ordinal='104' />
+                  <column datatype='real' name='Shots Blocked' ordinal='105' />
+                  <column datatype='real' name='Shots Saved' ordinal='106' />
+                  <column datatype='real' name='Interceptions' ordinal='107' />
+                  <column datatype='real' name='Tkl+Int' ordinal='108' />
+                  <column datatype='real' name='Clearances' ordinal='109' />
+                  <column datatype='real' name='Errors' ordinal='110' />
+                  <column datatype='real' name='Touches' ordinal='111' />
+                  <column datatype='real' name='Touches (Def Pen)' ordinal='112' />
+                  <column datatype='real' name='Touches (Def 3rd)' ordinal='113' />
+                  <column datatype='real' name='Touches (Mid 3rd)' ordinal='114' />
+                  <column datatype='real' name='Touches (Att 3rd)' ordinal='115' />
+                  <column datatype='real' name='Touches (Att Pen)' ordinal='116' />
+                  <column datatype='real' name='Touches (Live-Ball)' ordinal='117' />
+                  <column datatype='real' name='Dribbles Completed' ordinal='118' />
+                  <column datatype='real' name='Dribbles Attempted' ordinal='119' />
+                  <column datatype='real' name='Successful Dribble %' ordinal='120' />
+                  <column datatype='real' name='Players Dribbled Past' ordinal='121' />
+                  <column datatype='real' name='Nutmegs' ordinal='122' />
+                  <column datatype='real' name='Carries' ordinal='123' />
+                  <column datatype='real' name='Total Carrying Distance' ordinal='124' />
+                  <column datatype='real' name='Progressive Carrying Distance' ordinal='125' />
+                  <column datatype='real' name='Progressive Carries' ordinal='126' />
+                  <column datatype='real' name='Carries into Final Third' ordinal='127' />
+                  <column datatype='real' name='Carries into Penalty Area' ordinal='128' />
+                  <column datatype='real' name='Miscontrols' ordinal='129' />
+                  <column datatype='real' name='Dispossessed' ordinal='130' />
+                  <column datatype='real' name='Pass Targets' ordinal='131' />
+                  <column datatype='real' name='Passes Received' ordinal='132' />
+                  <column datatype='real' name='Passes Received %' ordinal='133' />
+                  <column datatype='real' name='Progressive Passes Rec' ordinal='134' />
+                  <column datatype='real' name='Second Yellow Card' ordinal='135' />
+                  <column datatype='real' name='Fouls Committed' ordinal='136' />
+                  <column datatype='real' name='Fouls Drawn' ordinal='137' />
+                  <column datatype='real' name='Offsides' ordinal='138' />
+                  <column datatype='real' name='Penalty Kicks Won' ordinal='139' />
+                  <column datatype='real' name='Penalty Kicks Conceded' ordinal='140' />
+                  <column datatype='real' name='Own Goals' ordinal='141' />
+                  <column datatype='real' name='Ball Recoveries' ordinal='142' />
+                  <column datatype='real' name='Aerials won' ordinal='143' />
+                  <column datatype='real' name='Aerials lost' ordinal='144' />
+                  <column datatype='real' name='% of Aerials Won' ordinal='145' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Finishing Analysis: Shot-Creating Actions vs. Goal-Creating Actions (Per 90 Minutes)
+</run>
+            <run fontsize='12'>Clubs From Europe&apos;s Top 5 Leagues -- All Data From Past 365 days -- All Data From FBRef.com</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true'>Caption:</run>
+            <run>
+- Each GCA is counted as a SCA since each goal results from a shot
+- GCA/SCA ratio measures a team&apos;s respective finishing ability.
+- Summary: Teams above trendline have better finishing than those below
+
+Note: Stats calculated by summing stats of all players at each club. This yields higher values than what a club would actually produce per 90 since all players cannot play at once. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='players' name='federated.0lyssy200wqy6q19w0c8k179mene' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lyssy200wqy6q19w0c8k179mene'>
+            <column caption='Goal-Creating Actions1' datatype='real' name='[Goal-Creating Actions]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Goals]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Shot-Creating Actions]' role='measure' type='quantitative' />
+            <column caption='Club' datatype='string' name='[club]' role='dimension' type='nominal' />
+            <column caption='League' datatype='string' name='[league]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Goal-Creating Actions]' derivation='None' name='[none:Goal-Creating Actions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[club]' derivation='None' name='[none:club:nk]' pivot='key' type='nominal' />
+            <column-instance column='[league]' derivation='None' name='[none:league:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Goal-Creating Actions]' derivation='Sum' name='[sum:Goal-Creating Actions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Goals]' derivation='Sum' name='[sum:Goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shot-Creating Actions]' derivation='Sum' name='[sum:Shot-Creating Actions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:Goal-Creating Actions:qk]' included-values='in-range'>
+            <min>0.029999999999999999</min>
+            <max>1.26</max>
+          </filter>
+          <filter class='categorical' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]'>
+            <groupfilter from='&quot;Alavés&quot;' function='range' level='[none:club:nk]' to='&quot;Wolves&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]'>
+            <groupfilter function='level-members' level='[none:league:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' included-values='in-range'>
+            <min>0.10000000000000001</min>
+            <max>5.0199999999999996</max>
+          </filter>
+          <slices>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]</column>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]</column>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]</column>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]</column>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:Goal-Creating Actions:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Shot-Creating Actions:qk]' value='45' />
+            <format attr='title' class='0' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Shot-Creating Actions:qk]' scope='cols' value='Shot-Creating Actions (SCA)' />
+            <format attr='width' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goal-Creating Actions:qk]' value='64' />
+            <format attr='title' class='0' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goal-Creating Actions:qk]' scope='rows' value='Goal-Creating Actions (GCA)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' min='0.001' palette='blue_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+            <encoding attr='size-bar' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Shot-Creating Actions:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Shot-Creating Actions:qk]' min='0.001' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' />
+              <lod column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]' />
+              <text column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]' />
+              <size column='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enable-tooltips='false' enabled='true' exclude-color='true' exclude-intercept='false' fit='linear'>
+              <excluded-factors>
+                <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Club:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>League:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>SCA:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Shot-Creating Actions:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>GCA:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Goals:&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8837499618530273' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1082' />
+                <format attr='maxwidth' value='1082' />
+                <format attr='minheight' value='728' />
+                <format attr='maxheight' value='728' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-color' value='#00000077' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goal-Creating Actions:qk]</rows>
+        <cols>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Shot-Creating Actions:qk]</cols>
+      </table>
+      <simple-id uuid='{C334F27F-BF6A-4D2C-8C90-FEA44D2BF917}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Finishing Analysis: Shot-Creating Actions vs. Goal-Creating Actions (Per 90 Minutes)
+</run>
+            <run fontsize='12'>Clubs From Europe&apos;s Top 5 Leagues -- All Data From Past 365 days -- All Data From FBRef.com</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text />
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='players' name='federated.0lyssy200wqy6q19w0c8k179mene' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lyssy200wqy6q19w0c8k179mene'>
+            <column datatype='real' name='[Goals]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Progressive Carries]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Progressive Passes]' role='measure' type='quantitative' />
+            <column-instance column='[club]' derivation='Attribute' name='[attr:club:nk]' pivot='key' type='nominal' />
+            <column caption='Club' datatype='string' name='[club]' role='dimension' type='nominal' />
+            <column caption='League' datatype='string' name='[league]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[league]' derivation='None' name='[none:league:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Goals]' derivation='Sum' name='[sum:Goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Progressive Carries]' derivation='Sum' name='[sum:Progressive Carries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Progressive Passes]' derivation='Sum' name='[sum:Progressive Passes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]'>
+            <groupfilter function='level-members' level='[none:league:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' included-values='in-range'>
+            <min>0.10000000000000001</min>
+            <max>5.0199999999999996</max>
+          </filter>
+          <slices>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]</column>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]</column>
+            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' min='0.001' palette='blue_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' />
+              <tooltip column='[federated.0lyssy200wqy6q19w0c8k179mene].[attr:club:nk]' />
+              <text column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]' />
+              <lod column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enable-tooltips='false' enabled='true' exclude-color='true' exclude-intercept='false' fit='linear'>
+              <excluded-factors>
+                <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8837499618530273' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1082' />
+                <format attr='maxwidth' value='1082' />
+                <format attr='minheight' value='728' />
+                <format attr='maxheight' value='728' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-color' value='#00000077' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Progressive Passes:qk]</rows>
+        <cols>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Progressive Carries:qk]</cols>
+      </table>
+      <simple-id uuid='{A05D4654-0AA0-4FE1-8448-E289074471E3}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Note: Teams Above Trendline </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1'>Have Higher GCA/SCA Ratio</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4C008500-1A17-4871-8A13-1836F5FE48E6}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Note: Teams Below Trendline </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1'>Have Lower GCA/SCA Ratio</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E59A6816-7544-4851-9827-17D8C4D44723}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='players' name='federated.0lyssy200wqy6q19w0c8k179mene' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0lyssy200wqy6q19w0c8k179mene'>
+        <column caption='League' datatype='string' name='[league]' role='dimension' type='nominal' />
+        <column-instance column='[league]' derivation='None' name='[none:league:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98666' x='667' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='84833' x='667' y='1000'>
+              <zone h='98000' id='3' name='Sheet 1' show-caption='true' w='84833' x='667' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='166' h='98000' id='6' is-fixed='true' param='vert' w='13833' x='85500' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='highlighter' _.fcp.SetMembershipControl.true...type-v2='highlighter' h='6500' id='11' name='Sheet 1' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]' w='13833' x='85500' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='18250' id='8' name='Sheet 1' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' w='13833' x='85500' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='15750' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' w='13833' x='85500' y='25750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='18250' id='10' name='Sheet 1' pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' w='13833' x='85500' y='41500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='39250' id='24' is-scaled='1' param='/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Viz/soccer-ball-clipart.jpeg' w='13833' x='85500' y='59750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='9000' id='35' name='Sheet 2' show-caption='true' show-title='false' w='14000' x='21583' y='31500' />
+        <zone h='11750' id='36' name='Sheet 2 (2)' show-caption='true' show-title='false' w='15250' x='60250' y='54250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='44' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='43' param='vert' w='98666' x='667' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='highlighter' _.fcp.SetMembershipControl.true...type-v2='highlighter' h='6500' id='11' name='Sheet 1' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]' w='13833' x='85500' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='18250' id='8' mode='checkdropdown' name='Sheet 1' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' w='13833' x='85500' y='7500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 1' show-caption='true' w='84833' x='667' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='15750' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' w='13833' x='85500' y='25750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='18250' id='10' name='Sheet 1' pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' w='13833' x='85500' y='41500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='72' h='9000' id='35' is-fixed='true' name='Sheet 2' show-caption='true' show-title='false' w='14000' x='21583' y='31500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='94' h='11750' id='36' is-fixed='true' name='Sheet 2 (2)' show-caption='true' show-title='false' w='15250' x='60250' y='54250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='39250' id='24' is-fixed='true' is-scaled='1' param='/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Viz/soccer-ball-clipart.jpeg' w='13833' x='85500' y='59750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{67ABD853-481B-4D28-B70B-68A8223DBFBE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='155'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:club:nk]' type='highlighter' />
+            <card param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' type='size' />
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9788E5BF-B9F0-4F06-9088-983CCAFC521E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='155'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' type='color' />
+            <card param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A3C71E5-7F52-4629-9AC3-4B9E109B1F2C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 2 (2)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{668FE2DD-BBF7-4C47-8AA2-3150F724F05A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CB7322B-56A5-4511-B0B7-69C47790DD0B}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1DB7114-5634-45CC-A81C-0AB126DD18FE}' />
+    </window>
+  </windows>
+</workbook>

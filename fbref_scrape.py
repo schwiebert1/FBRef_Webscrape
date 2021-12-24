@@ -1,16 +1,17 @@
-gimport os
-import json
+import os
 import io
 import requests
 from lxml import etree
 import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.chrome import service
+from selenium.webdriver.chrome.service import Service
 from tqdm import tqdm
 
+# See README file for process overview, file descriptions, and data source
+
 def getPlayerInfo(url, path="/Users/turnerschwiebert/Desktop/chromedriver"):
-    
-    driver = webdriver.Chrome(executable_path=path)
+
+    driver = webdriver.Chrome(service=Service(path))
     driver.get(url)
     source_bytes = driver.page_source.encode()
     driver.quit()
@@ -61,86 +62,80 @@ def getPlayerRoot(info):
     return htmlroot
 
 def genAge(date, birth):
-    date_obj1 = date[2]*365
-    date_obj2 = date[0]*30
-    date_obj3 = date[1]
-    days_current = date_obj1 + date_obj2 + date_obj3
-    
-    # months = {
-    #     'January': 1,
-    #     'February': 2,
-    #     'March': 3,
-    #     'April': 4,
-    #     'May': 5,
-    #     'June': 6,
-    #     'July': 7,
-    #     'August': 8,
-    #     'September': 9,
-    #     'October': 10,
-    #     'November': 11,
-    #     'December': 12
-    # }
-    birth_obj1 = int(birth[0])*365
-    birth_obj2 = int(birth[1])*30
-    birth_obj3 = int(birth[2])
-    days_at_birth = birth_obj1 + birth_obj2 + birth_obj3
-    
+    #days_current = days + months*30 + years*365
+    #not perfect but good enough!
+    days_current = date[1] + date[0]*30 + date[2]*365
+
+    #days_current = years*365 + months*30 + days
+    days_at_birth = birth[0]*365 + birth[1]*30 + birth[2]
+
     age_days = days_current - days_at_birth
     age = age_days/365
-
     return age
 
 def PlayerRow(root, info, date):
     
+    #check root parameter
     if root == "Error":
-        return "Error"
+        pos = "Error"
     
     row={}
-    
+    #make root a string
     rootSTR = etree.tostring(root).decode()
   
+    #use 
+    row['player_id'] = info[1]
+    row ['name'] = info[0].replace("-"," ")
+    row['club'] = info[3]
+    row['league'] = info[2]
+
+    #For fragile XPath variables, check for error. "Error" players are passed in genTable
     try:
-        row['player_id'] = info[1]
-        
-        name = info[0].replace("-"," ")
-        row ['name'] = name
-        
+        #HEIGHT
         heightSTR = rootSTR.split("""itemprop="height">""")[1]
         row['height_cm'] = int(heightSTR[:heightSTR.find("c")])
-        
+
+        #WEIGHT
         weightSTR = rootSTR.split("""itemprop="weight">""")[1]
         row['weight_kg'] = int(weightSTR[:weightSTR.find("k")])
-        
+
+        #POSITION
         posSTR = rootSTR.split("vs. ")[1][:15]
         row['position'] = posSTR[:posSTR.find("s")]
-        
+            
+        #PRIMARY FOOT
         footSTR = rootSTR.split("""Footed:</strong>""")[1][:20].split("% ")[1]
         row['foot'] = footSTR[:footSTR.find("<")]
-        
-        club = info[3]
-        row['club'] = club
-        
-        row['league'] = info[2]
-        
+            
+        #COUNTRY
         countrySTR = rootSTR.split("""National Team:</strong>""")[1].split(">")[1]
         row['country'] = countrySTR[:countrySTR.find("<")]
-        
-        ageSTR = rootSTR.split("""itemprop="birthDate" id="necro-birth" data-birt""")[1].split("h=")[1][1:10]
-        birth_date = ageSTR.split["-"]
-        birth = (birth_date[0], birth_date[1], birth_date[2])
+            
+        #AGE
+        # try:
+        birthSTR = rootSTR.split("""itemprop="birthDate" id="necro-birth" data-birt""")[1].split("h=")[1][1:11]
+        birth_date = birthSTR.split("-")
+        birth = (int(birth_date[0]), int(birth_date[1]), int(birth_date[2]))
         #year, month, day
         age = round(genAge(date, birth), 2)
         row['age'] = age
-    except:
-        return "Error"
+        # except:
+        #     print("Error - Age")
+        #     quit()
     
-    row['PD_Info'] = f"{name} - {age} - {club}"
+        #PD_info  = "name - age - club"
+        name = info[0].replace("-"," ")
+        club = info[3]
+        row['PD_Info'] = f"{name} - {age} - {club}"
+    except:
+        pos = "Error"
+        return "Error"
     
     #ASSIGN "POS"
     pos = posSTR[:posSTR.find("s")]
     attrib = ""
     if pos == "Goalkeeper":
-        return "Error"
+        pos = "Error"
     if pos == "Fullback":
         attrib = "FB"
     if pos == "Center Back":
@@ -152,8 +147,9 @@ def PlayerRow(root, info, date):
     if pos == "Att Mid / Wing":
         attrib = "AM"
     
-    varibs = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/th/text()""")
+    vars = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/th/text()""")
     
+    #garbage website headers
     remove = [
         "Shooting",
         "Statistic",
@@ -166,7 +162,7 @@ def PlayerRow(root, info, date):
         "Per 90",
         "Percentile"
     ]
-    var_list = [i for i in varibs if i not in remove]
+    var_list = [i for i in vars if i not in remove]
     
     vals = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/td[1]/text()""")
     values = []
@@ -179,10 +175,10 @@ def PlayerRow(root, info, date):
     try:
         assert len(values) == len(var_list)
     except:
-        return "Error"
+        return "Error - len vals != len vars"
     
     if len(values) == 0:
-        return "Error"
+        return "Error - no vals found"
     
     tuples = []
     for i in range(len(values)):
@@ -198,9 +194,9 @@ def getDate():
     response = requests.get("https://www.calendardate.com/todays.htm")
     date = response.text.split("""<td id="tprg"> """)[5].split("-")
     date_tuple = (int(date[0]), int(date[1]), int(date[2][:4]))
-    return date_tupleF
+    return date_tuple
 
-def genTables(date,
+def genTables(date = getDate(),
     url_list = [
     "https://fbref.com/en/comps/9/stats/Premier-League-Stats",
     "https://fbref.com/en/comps/13/stats/Ligue-1-Stats",
@@ -208,6 +204,7 @@ def genTables(date,
     "https://fbref.com/en/comps/11/stats/Serie-A-Stats",
     "https://fbref.com/en/comps/12/stats/La-Liga-Stats"], 
     ):
+    dest = os.getcwd() + "/Data"
     
     prem_list = getPlayerInfo(url_list[0])
     ligue_list = getPlayerInfo(url_list[1])
@@ -218,6 +215,8 @@ def genTables(date,
     info_list = prem_list + ligue_list + bundes_list + serie_list + liga_list
     
     player_list = []
+
+    #ensures only unique players in df's
     found = set()
     for i in info_list:
         if i[1] not in found:
@@ -230,7 +229,7 @@ def genTables(date,
     FW_LoD = []
     for i in tqdm(player_list):
         result = PlayerRow(getPlayerRoot(i), i, date)
-        if result == 'Error':
+        if result[1] == "Error":
             pass
         if result[1] == "Fullback":
             FB_LoD.append(result[0])
@@ -246,12 +245,38 @@ def genTables(date,
     MF_df = pd.DataFrame(MF_LoD)
     FW_df = pd.DataFrame(FW_LoD)
     
-    FB_df.to_csv("/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Data/fullbacks.csv")
-    CB_df.to_csv("/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Data/centerbacks.csv")
-    MF_df.to_csv("/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Data/midfielders.csv")
-    FW_df.to_csv("/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Data/forwards.csv")
+    FB_df.to_csv(dest + "/fullbacks.csv")
+    CB_df.to_csv(dest + "/centerbacks.csv")
+    MF_df.to_csv(dest + "/midfielders.csv")
+    FW_df.to_csv(dest + "/forwards.csv")
 
     FULL_df = pd.concat([FB_df, CB_df, MF_df, FW_df])
-    FULL_df.to_csv("/Users/turnerschwiebert/Desktop/GitHub/FBRef_Webscrape/Data/players.csv")
+    FULL_df.to_csv(dest + "/players.csv")
 
-genTables(date = getDate())
+# FUNCTION CALL FOR COLLECTION:
+genTables()
+
+### TESTING ###
+
+## getPlayerInfo ##
+
+# premPlayers = getPlayerInfo("https://fbref.com/en/comps/9/stats/Premier-League-Stats")
+# print(premPlayers, len(premPlayers))
+
+## getPlayerRoot ##
+
+# max = ('Max-Aarons', '774cf58b', 'Premier League', 'Norwich City')
+# rootSTR = etree.tostring(getPlayerRoot(max)).decode()
+# print(rootSTR)
+
+## PlayerRow ##
+
+# max = ('Max-Aarons', '774cf58b', 'Premier League', 'Norwich City')
+# today = getDate()
+# print(PlayerRow(root = getPlayerRoot(max), info = max, date = today))
+
+## genAge / getDate ##
+
+# print(getDate())
+# print(genAge(getDate(), (2020, 1, 1)))
+

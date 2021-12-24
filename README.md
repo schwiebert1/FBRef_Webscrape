@@ -1,11 +1,10 @@
 # FBRef_Webscrape
 
-Webscraping FBRef to collect per90 data on all football players in Europe's Top 5 Leagues (Premier League, Bundesliga, Ligue 1, Serie A, La Liga).\n
-I challenged myself to use webscraping techniques as much as possible.
+Webscraping FBRef to collect per90 data on all football players in Europe's Top 5 Leagues (Premier League, Bundesliga, Ligue 1, Serie A, La Liga).
 
 All data collected from: https://fbref.com/en/
 
-*STATUS:* not working :( 
+*STATUS:* WORKING :)
 
 ## fbref_srape.py:
 
