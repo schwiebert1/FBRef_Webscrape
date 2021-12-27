@@ -175,10 +175,10 @@ def PlayerRow(root, info, date):
     try:
         assert len(values) == len(var_list)
     except:
-        return "Error - len vals != len vars"
+        return "Error"
     
     if len(values) == 0:
-        return "Error - no vals found"
+        return "Error"
     
     tuples = []
     for i in range(len(values)):
@@ -229,7 +229,7 @@ def genTables(date = getDate(),
     FW_LoD = []
     for i in tqdm(player_list):
         result = PlayerRow(getPlayerRoot(i), i, date)
-        if result[1] == "Error":
+        if result[1] == "Error": # passes goalkeepers
             pass
         if result[1] == "Fullback":
             FB_LoD.append(result[0])
@@ -261,7 +261,9 @@ genTables()
 ## getPlayerInfo ##
 
 # premPlayers = getPlayerInfo("https://fbref.com/en/comps/9/stats/Premier-League-Stats")
-# print(premPlayers, len(premPlayers))
+# for i in premPlayers:
+#     print(i)
+# print("# of players: ", len(premPlayers))
 
 ## getPlayerRoot ##
 

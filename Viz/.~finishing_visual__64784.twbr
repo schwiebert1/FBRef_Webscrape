@@ -2140,7 +2140,29 @@
       <column caption='Weight Kg' datatype='integer' name='[weight_kg]' role='measure' type='quantitative' />
       <column caption='X A' datatype='real' name='[xA]' role='measure' type='quantitative' />
       <column caption='X G' datatype='real' name='[xG]' role='measure' type='quantitative' />
+      <column-instance column='[league]' derivation='None' name='[none:league:nk]' pivot='key' type='nominal' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='3000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:league:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bundesliga&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Serie A&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Premier League&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ligue 1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;La Liga&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -2453,7 +2475,7 @@ Note: Stats calculated by summing stats of all players at each club. This yields
       <layout-options>
         <title>
           <formatted-text>
-            <run>Finishing Analysis: Shot-Creating Actions vs. Goal-Creating Actions (Per 90 Minutes)
+            <run>Playmaking Analysis: Progressive Passes vs. Progressive Carries (Per 90 Minutes)
 </run>
             <run fontsize='12'>Clubs From Europe&apos;s Top 5 Leagues -- All Data From Past 365 days -- All Data From FBRef.com</run>
             <run>Æ&#10;</run>
@@ -2469,7 +2491,6 @@ Note: Stats calculated by summing stats of all players at each club. This yields
             <datasource caption='players' name='federated.0lyssy200wqy6q19w0c8k179mene' />
           </datasources>
           <datasource-dependencies datasource='federated.0lyssy200wqy6q19w0c8k179mene'>
-            <column datatype='real' name='[Goals]' role='measure' type='quantitative' />
             <column datatype='real' name='[Progressive Carries]' role='measure' type='quantitative' />
             <column datatype='real' name='[Progressive Passes]' role='measure' type='quantitative' />
             <column-instance column='[club]' derivation='Attribute' name='[attr:club:nk]' pivot='key' type='nominal' />
@@ -2478,7 +2499,6 @@ Note: Stats calculated by summing stats of all players at each club. This yields
             <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
             <column-instance column='[league]' derivation='None' name='[none:league:nk]' pivot='key' type='nominal' />
             <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Goals]' derivation='Sum' name='[sum:Goals:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Progressive Carries]' derivation='Sum' name='[sum:Progressive Carries:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Progressive Passes]' derivation='Sum' name='[sum:Progressive Passes:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -2488,24 +2508,13 @@ Note: Stats calculated by summing stats of all players at each club. This yields
           <filter class='categorical' column='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]'>
             <groupfilter function='level-members' level='[none:name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
           </filter>
-          <filter class='quantitative' column='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' included-values='in-range'>
-            <min>0.10000000000000001</min>
-            <max>5.0199999999999996</max>
-          </filter>
           <slices>
             <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]</column>
-            <column>[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]</column>
             <column>[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
-        <style>
-          <style-rule element='mark'>
-            <encoding attr='size-bar' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
-            <encoding attr='color' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' min='0.001' palette='blue_10_0' type='interpolated' />
-            <encoding attr='size' field='[federated.0lyssy200wqy6q19w0c8k179mene].[sum:Goals:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
-          </style-rule>
-        </style>
+        <style />
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
@@ -2526,7 +2535,7 @@ Note: Stats calculated by summing stats of all players at each club. This yields
             </trendline>
             <style>
               <style-rule element='mark'>
-                <format attr='size' value='1.8837499618530273' />
+                <format attr='size' value='1.4172928333282471' />
                 <format attr='shape' value=':filled/circle' />
                 <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-show' value='true' />
@@ -2834,7 +2843,7 @@ Note: Stats calculated by summing stats of all players at each club. This yields
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='168'>
+          <strip size='148'>
             <card param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' type='filter' />
             <card pane-specification-id='0' param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:league:nk]' type='color' />
             <card param='[federated.0lyssy200wqy6q19w0c8k179mene].[none:name:nk]' type='highlighter' />

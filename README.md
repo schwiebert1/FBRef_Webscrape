@@ -17,7 +17,7 @@ Scrapes player names from league's page. Uses that info to build valid URL's for
   - getPlayerInfo: Returns list of player names, club, league, and FBRef player ID by scraping league page (using chrome web driver)
   - getPlayerRoot: Builds player-specific url and returns its parsed html response (root)
   - genAge: returns up-to-date age using birth day and runtime's date (invoked in PlayerRow)
-  - PlayerRow: does XPath heavy lifting. Returns list [row, pos] where row is a dict with many variables,values and pos is position
+  - PlayerRow: does XPath heavy lifting. Returns list [row, pos] where row is a dict with many variables/values and pos is player's field position
   - getDate: scrapes today's date from https://www.calendardate.com/todays.htm, returns date as tuple
   - genTables: uses pandas to turn rows from PlayerRow into data frames and writes csv files for
       - All positions (players.csv)
