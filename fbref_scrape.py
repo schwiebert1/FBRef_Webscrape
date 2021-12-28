@@ -77,8 +77,8 @@ def PlayerRow(root, info, date):
     
     #check root parameter
     if root == "Error":
-        pos = "Error"
-    
+        return "Error"
+        
     row={}
     #make root a string
     rootSTR = etree.tostring(root).decode()
@@ -89,28 +89,43 @@ def PlayerRow(root, info, date):
     row['club'] = info[3]
     row['league'] = info[2]
 
-    #For fragile XPath variables, check for error. "Error" players are passed in genTable
+    #For fragile XPath variables, check for error. Error yields empty string
     try:
         #HEIGHT
         heightSTR = rootSTR.split("""itemprop="height">""")[1]
         row['height_cm'] = int(heightSTR[:heightSTR.find("c")])
+    except:
+        row['height_cm'] = ""
 
+    try:
         #WEIGHT
         weightSTR = rootSTR.split("""itemprop="weight">""")[1]
         row['weight_kg'] = int(weightSTR[:weightSTR.find("k")])
+    except:
+        row['weight_kg'] = ""
 
+    try:
         #POSITION
         posSTR = rootSTR.split("vs. ")[1][:15]
         row['position'] = posSTR[:posSTR.find("s")]
+    except:
+        return "Error" #must return error if pos not found since pos needed for values...
             
+    try:
         #PRIMARY FOOT
         footSTR = rootSTR.split("""Footed:</strong>""")[1][:20].split("% ")[1]
         row['foot'] = footSTR[:footSTR.find("<")]
-            
+    except:
+        row['foot'] = ""
+    
+    try:
         #COUNTRY
         countrySTR = rootSTR.split("""National Team:</strong>""")[1].split(">")[1]
         row['country'] = countrySTR[:countrySTR.find("<")]
-            
+    except:
+        row['country'] = ""
+
+    try:
         #AGE
         # try:
         birthSTR = rootSTR.split("""itemprop="birthDate" id="necro-birth" data-birt""")[1].split("h=")[1][1:11]
@@ -122,20 +137,20 @@ def PlayerRow(root, info, date):
         # except:
         #     print("Error - Age")
         #     quit()
+    except:
+        row['age'] = ""
     
+    try:
         #PD_info  = "name - age - club"
         name = info[0].replace("-"," ")
         club = info[3]
         row['PD_Info'] = f"{name} - {age} - {club}"
     except:
-        pos = "Error"
-        return "Error"
+        row['PD_Info'] = ""
     
     #ASSIGN "POS"
     pos = posSTR[:posSTR.find("s")]
     attrib = ""
-    if pos == "Goalkeeper":
-        pos = "Error"
     if pos == "Fullback":
         attrib = "FB"
     if pos == "Center Back":
@@ -146,34 +161,52 @@ def PlayerRow(root, info, date):
         attrib = "FW"
     if pos == "Att Mid / Wing":
         attrib = "AM"
+    # attrib used in format strings for xpath for outfield players
     
-    vars = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/th/text()""")
-    
-    #garbage website headers
-    remove = [
-        "Shooting",
-        "Statistic",
-        "Passing",
-        "Pass Types",
-        "Goal and Shot Creation",
-        "Defense",
-        "Possession",
-        "Miscellaneous Stats",
-        "Per 90",
-        "Percentile"
-    ]
-    var_list = [i for i in vars if i not in remove]
-    
-    vals = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/td[1]/text()""")
-    values = []
-    for i in vals:
-        if i.find("%") != -1:
-            values.append(i[:-1])
-        else:
-            values.append(i)
+    #GOALKEEPERS:
+    if pos == "Goalkeeper":
+        vars = root.xpath(f"""//*[@id="scout_full_GK"]/tbody/tr/th/text()""")
+        remove = [
+            "Statistic",
+            "Per 90",
+            "Percentile",
+            "Advanced Goalkeeping"
+        ]
+        vars = [i for i in vars if i not in remove]
+        vals = root.xpath("""//*[@id="scout_full_GK"]/tbody/tr/td[1]/text()""")
+        values = []
+        for i in vals:
+            if i.find("%") != -1:
+                values.append(i[:-1])
+            else:
+                values.append(i)
+    #NOT GOALKEEPERS:
+    else:
+        vars = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/th/text()""")
+        remove = [
+            "Shooting",
+            "Statistic",
+            "Passing",
+            "Pass Types",
+            "Goal and Shot Creation",
+            "Defense",
+            "Possession",
+            "Miscellaneous Stats",
+            "Per 90",
+            "Percentile"
+        ]
+        vars = [i for i in vars if i not in remove]
+
+        vals = root.xpath(f"""//*[@id="scout_full_{attrib}"]/tbody/tr/td[1]/text()""")
+        values = []
+        for i in vals:
+            if i.find("%") != -1:
+                values.append(i[:-1])
+            else:
+                values.append(i)
     
     try:
-        assert len(values) == len(var_list)
+        assert len(values) == len(vars)
     except:
         return "Error"
     
@@ -182,7 +215,7 @@ def PlayerRow(root, info, date):
     
     tuples = []
     for i in range(len(values)):
-        obj = (var_list[i], float(values[i]))
+        obj = (vars[i], float(values[i]))
         tuples.append(obj)
     
     for i in tuples:
@@ -227,6 +260,7 @@ def genTables(date = getDate(),
     CB_LoD = []
     MF_LoD = []
     FW_LoD = []
+    GK_LoD = []
     for i in tqdm(player_list):
         result = PlayerRow(getPlayerRoot(i), i, date)
         if result[1] == "Error": # passes goalkeepers
@@ -239,18 +273,22 @@ def genTables(date = getDate(),
             MF_LoD.append(result[0])
         if result[1] == "Forward" or result[1] == "Att Mid / Wing":
             FW_LoD.append(result[0])
+        if result[1] == "Goalkeeper":
+            GK_LoD.append(result[0])
             
     FB_df = pd.DataFrame(FB_LoD)
     CB_df = pd.DataFrame(CB_LoD)
     MF_df = pd.DataFrame(MF_LoD)
     FW_df = pd.DataFrame(FW_LoD)
-    
+    GK_df = pd.DataFrame(GK_LoD)
+
     FB_df.to_csv(dest + "/fullbacks.csv")
     CB_df.to_csv(dest + "/centerbacks.csv")
     MF_df.to_csv(dest + "/midfielders.csv")
     FW_df.to_csv(dest + "/forwards.csv")
+    GK_df.to_csv(dest + "/goalkeepers.csv")
 
-    FULL_df = pd.concat([FB_df, CB_df, MF_df, FW_df])
+    FULL_df = pd.concat([FB_df, CB_df, MF_df, FW_df]) #NOT GOALKEEPERS
     FULL_df.to_csv(dest + "/players.csv")
 
 # FUNCTION CALL FOR COLLECTION:
@@ -273,9 +311,16 @@ genTables()
 
 ## PlayerRow ##
 
+## Non-GK
 # max = ('Max-Aarons', '774cf58b', 'Premier League', 'Norwich City')
 # today = getDate()
 # print(PlayerRow(root = getPlayerRoot(max), info = max, date = today))
+
+## GK
+# alisson = ('Alisson', '7a2e46a8', 'Premier League', 'Liverpool')
+# today = getDate()
+# print(PlayerRow(root = getPlayerRoot(alisson), info = alisson, date = today))
+
 
 ## genAge / getDate ##
 
