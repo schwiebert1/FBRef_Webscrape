@@ -4,7 +4,7 @@ Webscraping FBRef to collect per90 data on all football players in Europe's Top 
 
 All data collected from: https://fbref.com/en/
 
-*STATUS:* WORKING :)
+*STATUS:* offline
 
 ## fbref_srape.py:
 
